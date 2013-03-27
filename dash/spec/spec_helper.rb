@@ -38,7 +38,7 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   config.include Spree::TestingSupport::UrlHelpers
   config.include Spree::TestingSupport::ControllerRequests, :type => :controller
-  config.include Rack::Test::Methods, :type => :request
+  config.include Rack::Test::Methods, :type => :feature
 
   config.fail_fast = ENV['FAIL_FAST'] || false
 end
